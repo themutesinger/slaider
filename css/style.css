@@ -1,0 +1,420 @@
+/*Обнуление*/
+* {
+  padding: 0;
+  margin: 0;
+  border: 0;
+}
+*,
+*:before,
+*:after {
+  box-sizing: border-box;
+}
+:focus,
+:active {
+  outline: none;
+}
+a:focus,
+a:active {
+  outline: none;
+}
+nav,
+footer,
+header,
+aside {
+  display: block;
+}
+html,
+body {
+  height: 100%;
+  width: 100%;
+  font-size: 100%;
+  line-height: 1;
+  font-size: 14px;
+  -ms-text-size-adjust: 100%;
+  -moz-text-size-adjust: 100%;
+  -webkit-text-size-adjust: 100%;
+}
+input,
+button,
+textarea {
+  font-family: inherit;
+}
+input::-ms-clear {
+  display: none;
+}
+button {
+  cursor: pointer;
+}
+button::-moz-focus-inner {
+  padding: 0;
+  border: 0;
+}
+a,
+a:visited {
+  text-decoration: none;
+}
+a:hover {
+  text-decoration: none;
+}
+ul li {
+  list-style: none;
+}
+img {
+  vertical-align: top;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-size: inherit;
+  font-weight: 400;
+}
+/*--------------------*/
+@font-face {
+  font-family: 'Bebas Neue';
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: local('Bebas Neue Regular'), local('BebasNeue-Regular'), url(https://fonts.gstatic.com/s/bebasneue/v1/JTUSjIg69CK48gW7PXooxW4.ttf) format('truetype');
+}
+@font-face {
+  font-family: 'Helvetica';
+  src: url('../font/helveticaneuecyr-roman.eot');
+  src: local('☺'), url('../font/helveticaneuecyr-roman.woff') format('woff'), url('../font/helveticaneuecyr-roman.ttf') format('truetype'), url('../font/helveticaneuecyr-roman.svg') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'helvetica-ultralight';
+  src: url('../font/helveticaneuecyr-ultralight.eot');
+  src: local('☺'), url('../font/helveticaneuecyr-ultralight.woff') format('woff'), url('../font/helveticaneuecyr-ultralight.ttf') format('truetype'), url('../font/helveticaneuecyr-ultralight.svg') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'Conv_LeelUIsl';
+  src: url('../font/LeelUIsl.eot');
+  src: local('☺'), url('../font/LeelUIsl.woff') format('woff'), url('../font/LeelUIsl.ttf') format('truetype'), url('../font/LeelUIsl.svg') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'Conv_HelveticaNeueLTPro-BdCn';
+  src: url('../font/HelveticaNeueLTPro-BdCn.eot');
+  src: local('☺'), url('../font/HelveticaNeueLTPro-BdCn.woff') format('woff'), url('../font/HelveticaNeueLTPro-BdCn.ttf') format('truetype'), url('../font/HelveticaNeueLTPro-BdCn.svg') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'Conv_Helvetica Neue CE 75 Bold';
+  src: url('../font/Helvetica Neue CE 75 Bold.eot');
+  src: local('☺'), url('../font/Helvetica Neue CE 75 Bold.woff') format('woff'), url('../font/Helvetica Neue CE 75 Bold.ttf') format('truetype'), url('../font/Helvetica Neue CE 75 Bold.svg') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+body {
+  background-image: url(../img/Слой1копия.png);
+  padding: 10px;
+}
+.wrapper {
+  width: 1024px;
+  min-height: 300px;
+  margin: 0 auto;
+  background-image: url(../img/Слой1.png);
+  border-top: 7px solid black;
+  box-shadow: 0px 0px 10px black;
+}
+.content {
+  width: 960px;
+  margin: 0 auto;
+  padding: 0 0 30px 0;
+}
+.header {
+  width: 100%;
+  height: 77px;
+  padding: 8px 0 0 0;
+  position: relative;
+}
+.logo {
+  display: inline-block;
+}
+.header__menu {
+  position: absolute;
+  right: 2px;
+  bottom: 14px;
+  display: inline-block;
+  font-family: 'Helvetica';
+  font-size: 14px;
+}
+.header__item {
+  color: #595959;
+}
+.header__item:after {
+  content: "";
+  width: 2px;
+  height: 14px;
+  background: #595959;
+  display: inline-block;
+  margin: 0 8px;
+  position: relative;
+  top: 2px;
+}
+.header__item2 {
+  color: #C42D21;
+}
+.menu {
+  width: 100%;
+  height: 34px;
+  background: linear-gradient(0deg, #A31C12, #C24C3B);
+  border-radius: 5px;
+  overflow: hidden;
+  position: relative;
+  margin-bottom: 13px;
+}
+.menu__item {
+  font-family: 'helvetica-ultralight';
+  height: 100%;
+  font-weight: 700;
+  font-size: 16px;
+  display: inline-block;
+  color: white;
+  padding: 9px 18px 0 18px;
+}
+.menu__item:first-child {
+  background: linear-gradient(0deg, #252525, #464646);
+}
+.menu__items {
+  display: inline-block;
+  height: 100%;
+}
+.contacts {
+  font-family: 'Helvetica';
+  font-size: 18px;
+  padding: 7px 0 0 60px;
+  color: white;
+  display: inline-block;
+  height: 100%;
+  width: 340px;
+  background: url(../img/krfn.png);
+  position: absolute;
+  right: 0px;
+  text-align: center;
+}
+.block_1 {
+  width: 100%;
+  min-height: 310px;
+  position: relative;
+  margin-bottom: 20px;
+}
+.slider {
+  position: relative;
+  width: 675px;
+  display: inline-block;
+}
+/* Слайдер */
+.slick-slider {
+  width: 675px;
+}
+/* Слайдер запущен */
+/* Слайдер с точками */
+/* Ограничивающая оболочка */
+.slick-list {
+  overflow: hidden;
+  width: 675px;
+  height: 310px;
+  border-radius: 3px;
+}
+/* Лента слайдов */
+.slick-track {
+  display: flex;
+}
+/* Слайд */
+.slick-slide img {
+  width: 675px;
+  height: 310px;
+}
+/* Слайд активный (показывается) */
+/* Слайд основной */
+/* Слайд по центру */
+/* Клонированный слайд */
+/* Стрелка */
+/* Стрелка влево */
+/* Стрелка вправо */
+/* Стрелка не активная */
+/* Точки (булиты) */
+.slick-dots {
+  display: flex;
+  justify-content: center;
+  position: absolute;
+  right: 0;
+  width: 200px;
+  bottom: 16px;
+}
+.slick-dots li {
+  display: block;
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  background-color: white;
+  margin: 0 3px;
+  transition: 0.5s;
+}
+/* Активная точка */
+.slick-dots li.slick-active {
+  margin: 0 6px;
+  position: relative;
+}
+.slick-dots li.slick-active:before {
+  content: "";
+  display: block;
+  position: absolute;
+  top: -3px;
+  left: -3px;
+  width: 14px;
+  height: 14px;
+  border: 1px solid white;
+  border-radius: 50%;
+}
+/* Элемент точки */
+.slick-dots li button {
+  font-size: 0;
+}
+.login {
+  width: 271px;
+  height: 308px;
+  background: url(../img/Layer24copy.png);
+  display: block;
+  position: absolute;
+  right: 0px;
+  top: 0px;
+  border-radius: 5px;
+  padding: 20px;
+}
+.zagolovok {
+  color: white;
+  font-family: 'Conv_HelveticaNeueLTPro-BdCn';
+  font-size: 20px;
+  display: inline-block;
+  margin: 0 0 18px 5px;
+}
+.zagolovok:before {
+  content: "";
+  display: inline-block;
+  width: 21px;
+  height: 21px;
+  background: url(../img/Layer23.png);
+  margin: 0 5px  0 0;
+}
+.login__body {
+  text-align: center;
+  color: white;
+}
+.input {
+  font-family: 'Conv_LeelUIsl';
+  font-size: 14px;
+  width: 216px;
+  height: 25px;
+  margin: 0 0 12px 0;
+  padding: 0px 5px;
+}
+.checkbox {
+  display: inline;
+}
+.text {
+  font-family: 'Conv_LeelUIsl';
+  font-size: 14px;
+}
+.button {
+  display: block;
+  height: 34px;
+  width: 85px;
+  border-radius: 5px;
+  margin: 10px auto 15px auto;
+  font-family: 'Conv_LeelUIsl';
+  font-size: 18px;
+  font-weight: 700;
+  text-decoration: none;
+  color: white;
+  background: linear-gradient(0deg, #B5271C, #DF4234);
+  padding: 5px 10px 0 10px;
+}
+.button:last-child {
+  width: 185px;
+}
+.text2 {
+  font-family: 'Conv_LeelUIsl';
+  font-size: 18px;
+  font-weight: 700;
+}
+.block_2 {
+  width: 100%;
+  position: relative;
+}
+.column1 {
+  width: 390px;
+  display: inline-block;
+}
+.column1 li {
+  font-family: 'Helvetica';
+  font-size: 14px;
+  color: #595959;
+  margin-bottom: 12px;
+  display: inline-block;
+}
+.column1 li:before {
+  content: "";
+  display: inline-block;
+  width: 14px;
+  height: 10px;
+  margin: 0 10px 0 22px;
+  background: url(../img/Layer26.png);
+  background-repeat: no-repeat;
+}
+.h1 {
+  font-family: 'Conv_Helvetica Neue CE 75 Bold';
+  color: #595959;
+  font-size: 22px;
+  margin: 0 0 25px 12px;
+}
+.h1 span {
+  color: #E24335;
+}
+.column2 {
+  display: inline-block;
+  width: 570px;
+  height: 180px;
+  position: absolute;
+  right: 0;
+}
+.column2 .h1 {
+  margin: 0 0  15px 0;
+}
+.column2__body {
+  width: 571px;
+  height: 142px;
+  background: url(../img/Makpayment.png);
+  border-radius: 5px;
+}
+.footer {
+  width: 100%;
+  height: 62px;
+  background: #1F1F1F;
+  position: relative;
+  padding: 20px 0 0 22px;
+}
+.sec {
+  font-family: 'Bebas Neue', cursive;
+  font-size: 28px;
+  color: white;
+  display: inline-block;
+}
+.c {
+  font-family: 'Helvetica';
+  font-size: 16px;
+  color: white;
+  position: absolute;
+  right: 30px;
+  top: 25px;
+}
